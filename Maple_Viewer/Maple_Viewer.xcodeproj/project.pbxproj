@@ -13,6 +13,7 @@
 		475B44F824D2F5A800E523A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 475B44F624D2F5A800E523A2 /* Main.storyboard */; };
 		475B44FA24D2F5AB00E523A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 475B44F924D2F5AB00E523A2 /* Assets.xcassets */; };
 		475B44FD24D2F5AB00E523A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 475B44FB24D2F5AB00E523A2 /* LaunchScreen.storyboard */; };
+		B658291B7235CE8A60722C13 /* Pods_Maple_Viewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6448F3AE813752BCA38D933B /* Pods_Maple_Viewer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		475B44F924D2F5AB00E523A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		475B44FC24D2F5AB00E523A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		475B44FE24D2F5AB00E523A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6448F3AE813752BCA38D933B /* Pods_Maple_Viewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Maple_Viewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FEC3DCE254E50AE473A490C /* Pods-Maple_Viewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Maple_Viewer.debug.xcconfig"; path = "Target Support Files/Pods-Maple_Viewer/Pods-Maple_Viewer.debug.xcconfig"; sourceTree = "<group>"; };
+		C2AE8B2EAF5AAF60AF4FAA97 /* Pods-Maple_Viewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Maple_Viewer.release.xcconfig"; path = "Target Support Files/Pods-Maple_Viewer/Pods-Maple_Viewer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B658291B7235CE8A60722C13 /* Pods_Maple_Viewer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				475B44EF24D2F5A800E523A2 /* Maple_Viewer */,
 				475B44EE24D2F5A800E523A2 /* Products */,
+				791B2CC0220A7E472A89CB50 /* Pods */,
+				BC56A7549466B5F4F5BD8AB0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = Maple_Viewer;
 			sourceTree = "<group>";
 		};
+		791B2CC0220A7E472A89CB50 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9FEC3DCE254E50AE473A490C /* Pods-Maple_Viewer.debug.xcconfig */,
+				C2AE8B2EAF5AAF60AF4FAA97 /* Pods-Maple_Viewer.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BC56A7549466B5F4F5BD8AB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6448F3AE813752BCA38D933B /* Pods_Maple_Viewer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 475B450124D2F5AB00E523A2 /* Build configuration list for PBXNativeTarget "Maple_Viewer" */;
 			buildPhases = (
+				08734AE6A83B053D266D9F35 /* [CP] Check Pods Manifest.lock */,
 				475B44E924D2F5A800E523A2 /* Sources */,
 				475B44EA24D2F5A800E523A2 /* Frameworks */,
 				475B44EB24D2F5A800E523A2 /* Resources */,
+				3F622C00D322E418297F346E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08734AE6A83B053D266D9F35 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Maple_Viewer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F622C00D322E418297F346E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Maple_Viewer/Pods-Maple_Viewer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Maple_Viewer/Pods-Maple_Viewer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Maple_Viewer/Pods-Maple_Viewer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		475B44E924D2F5A800E523A2 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		475B450224D2F5AB00E523A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FEC3DCE254E50AE473A490C /* Pods-Maple_Viewer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		475B450324D2F5AB00E523A2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2AE8B2EAF5AAF60AF4FAA97 /* Pods-Maple_Viewer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
