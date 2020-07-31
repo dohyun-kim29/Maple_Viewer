@@ -6,4 +6,10 @@
 //  Copyright © 2020 DohyunKim. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+
+class DetailViewController: UIViewController {
+    
+    
+}
