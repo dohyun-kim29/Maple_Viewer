@@ -11,10 +11,20 @@ import SnapKit
 
 class SearchViewController: UIViewController {
     
+    let txtSearch = UITextField()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       
+        self.view.addSubview(self.txtSearch)
+            txtSearch.backgroundColor = .white
+            txtSearch.snp.makeConstraints { (make) in
+                make.width.height.equalTo(100)
+                make.center.equalTo(self.view)
+                
+            }
+        
+        
         
         
     }
