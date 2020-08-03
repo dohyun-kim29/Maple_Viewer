@@ -15,6 +15,7 @@ class SearchViewController: UIViewController, UITextFieldDelegate {
     let btnSearch = UIButton()
     let lblIdView = UILabel()
     
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,10 +58,21 @@ class SearchViewController: UIViewController, UITextFieldDelegate {
         
     }
     
+    // textFieldDelegate
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        txtSearch.resignFirstResponder()
+        return true
+    }
+    
     @IBAction func btnSearch(sender: UIButton) {
         
     
         
     }
+    
     
 }
