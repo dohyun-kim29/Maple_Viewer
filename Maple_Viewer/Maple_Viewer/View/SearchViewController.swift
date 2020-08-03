@@ -9,25 +9,46 @@
 import UIKit
 import SnapKit
 
-class SearchViewController: UIViewController {
+class SearchViewController: UIViewController, UITextFieldDelegate {
     
     let txtSearch = UITextField()
+    let btnSearch = UIButton()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.backgroundColor = UIColor.white
+        
         self.view.addSubview(self.txtSearch)
-            txtSearch.backgroundColor = .white
-            txtSearch.snp.makeConstraints { (make) in
-                make.width.height.equalTo(100)
-                make.center.equalTo(self.view)
-                
-            }
+        txtSearch.backgroundColor = UIColor.white
+        txtSearch.snp.makeConstraints {
+            $0.top.equalToSuperview().offset(100)
+            $0.center.equalToSuperview()
+            $0.bottom.equalToSuperview().offset(-550)
+        }
+        txtSearch.layer.borderColor = UIColor.black.cgColor
+        txtSearch.layer.borderWidth = 0.3
+        txtSearch.placeholder = "캐릭터ID를 입력해주세요"
+        
+        self.view.addSubview(self.btnSearch)
+        btnSearch.backgroundColor = UIColor.white
+        btnSearch.snp.makeConstraints {
+            $0.center.equalToSuperview()
+        }
+        btnSearch.setTitle("Search", for: .normal)
+        btnSearch.setTitleColor(UIColor.black, for: .normal)
+        btnSearch.layer.cornerRadius = 5
         
         
         
         
     }
     
+    @IBAction func btnSearch(sender: UIButton) {
+        
+    
+        
+    }
     
 }

@@ -16,6 +16,7 @@
 		475B450B24D3FC9500E523A2 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475B450A24D3FC9500E523A2 /* SearchViewController.swift */; };
 		475B450D24D3FCA400E523A2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475B450C24D3FCA400E523A2 /* DetailViewController.swift */; };
 		475B450F24D3FCD000E523A2 /* BringData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475B450E24D3FCD000E523A2 /* BringData.swift */; };
+		4762E2CF24D7BA030037BF6F /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4762E2CE24D7BA030037BF6F /* SearchViewModel.swift */; };
 		B658291B7235CE8A60722C13 /* Pods_Maple_Viewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6448F3AE813752BCA38D933B /* Pods_Maple_Viewer.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		475B450A24D3FC9500E523A2 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		475B450C24D3FCA400E523A2 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		475B450E24D3FCD000E523A2 /* BringData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BringData.swift; sourceTree = "<group>"; };
+		4762E2CE24D7BA030037BF6F /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		6448F3AE813752BCA38D933B /* Pods_Maple_Viewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Maple_Viewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FEC3DCE254E50AE473A490C /* Pods-Maple_Viewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Maple_Viewer.debug.xcconfig"; path = "Target Support Files/Pods-Maple_Viewer/Pods-Maple_Viewer.debug.xcconfig"; sourceTree = "<group>"; };
 		C2AE8B2EAF5AAF60AF4FAA97 /* Pods-Maple_Viewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Maple_Viewer.release.xcconfig"; path = "Target Support Files/Pods-Maple_Viewer/Pods-Maple_Viewer.release.xcconfig"; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				475B450E24D3FCD000E523A2 /* BringData.swift */,
+				4762E2CE24D7BA030037BF6F /* SearchViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				475B450B24D3FC9500E523A2 /* SearchViewController.swift in Sources */,
+				4762E2CF24D7BA030037BF6F /* SearchViewModel.swift in Sources */,
 				475B450F24D3FCD000E523A2 /* BringData.swift in Sources */,
 				475B44F124D2F5A800E523A2 /* AppDelegate.swift in Sources */,
 				475B450D24D3FCA400E523A2 /* DetailViewController.swift in Sources */,
