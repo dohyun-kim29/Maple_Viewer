@@ -8,8 +8,11 @@
 
 import Foundation
 
+var SearchVM = SearchViewModel()
+
 struct CharacterInfo {
     
+    var charId = SearchVM.charId
     var imgUrl: String
     var world: String
     var nickName: String
