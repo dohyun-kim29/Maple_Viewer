@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
              } else {
                 window = UIWindow()
                 
-                let rootVc = SearchViewController()
+                let rootVc = SearchVC()
                        
                 window?.rootViewController = rootVc
                 
