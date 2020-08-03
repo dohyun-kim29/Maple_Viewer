@@ -7,3 +7,16 @@
 //
 
 import Foundation
+import RxCocoa
+import RxSwift
+
+var searchView = SearchViewController()
+
+class SearchViewModel {
+    
+    let charId = searchView.txtSearch.rx.text
+    
+}
+
+
+

@@ -8,14 +8,18 @@
 
 import UIKit
 import SnapKit
+import RxSwift
+import RxCocoa
 
-class SearchViewController: UIViewController, UITextFieldDelegate {
+
+
+class SearchVC: UIViewController, UITextFieldDelegate {
+    
+   var viewModel = SearchViewModel()
     
     let txtSearch = UITextField()
     let btnSearch = UIButton()
     let lblIdView = UILabel()
-    
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,6 +71,8 @@ class SearchViewController: UIViewController, UITextFieldDelegate {
         txtSearch.resignFirstResponder()
         return true
     }
+    
+    
     
     @IBAction func btnSearch(sender: UIButton) {
         
