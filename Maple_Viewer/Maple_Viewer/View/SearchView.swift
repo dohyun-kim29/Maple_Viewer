@@ -22,7 +22,7 @@ class SearchView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    let txtSearch: UITextField = {
+    let searchTxtField: UITextField = {
         let txtfield = UITextField()
         txtfield.backgroundColor = .white
         txtfield.layer.borderColor = UIColor.black.cgColor
@@ -30,7 +30,7 @@ class SearchView: UIView {
         txtfield.placeholder = "캐릭터ID를 입력해주세요"
         return txtfield
     }()
-    let btnSearch: UIButton = {
+    let searchButton: UIButton = {
         let btn = UIButton()
         btn.backgroundColor = .white
         btn.setTitle("Search", for: .normal)
@@ -53,20 +53,18 @@ extension SearchView {
     }
     
     func setupViews() {
-        self.addSubview(self.txtSearch)
-        self.addSubview(self.btnSearch)
+        self.addSubview(self.searchTxtField)
+        self.addSubview(self.searchButton)
     }
     
     func setupConstraints() {
-        txtSearch.snp.makeConstraints {
-            $0.centerX.equalTo(btnSearch)
-            $0.bottom.equalTo(btnSearch.snp.top).offset(-100)
+        searchTxtField.snp.makeConstraints {
+            $0.centerX.equalTo(searchButton)
+            $0.bottom.equalTo(searchButton.snp.top).offset(-100)
         }
         
-        btnSearch.snp.makeConstraints {
+        searchButton.snp.makeConstraints {
             $0.center.equalToSuperview()
         }
     }
 }
-
-
