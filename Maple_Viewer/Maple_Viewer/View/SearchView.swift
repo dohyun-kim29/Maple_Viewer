@@ -10,7 +10,6 @@ import SnapKit
 import UIKit
 import RxCocoa
 import RxSwift
-import RxOptional
 
 
 class SearchView: UIView {

@@ -9,10 +9,15 @@
 import Foundation
 import RxSwift
 
-let url = URL(string: "http://api.maplestory.nexon.com/soap/maplestory.asmx/soap/maplestory.asmx")
+class DetailViewModel {
+    
+    let url = URL(string: "http://api.maplestory.nexon.com/soap/maplestory.asmx/soap/maplestory.asmx")
 
-func request() {
-    
-    
+    func request() {
+        
+        
+    }
+
     
 }
+

@@ -6,4 +6,12 @@
 //  Copyright © 2020 DohyunKim. All rights reserved.
 //
 
-import Foundation
+import UIKit
+import SnapKit
+import RxSwift
+import RxCocoa
+
+class DetailView: UIView {
+    
+    
+}
