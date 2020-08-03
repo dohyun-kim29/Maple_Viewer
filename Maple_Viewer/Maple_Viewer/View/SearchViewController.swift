@@ -13,6 +13,7 @@ class SearchViewController: UIViewController, UITextFieldDelegate {
     
     let txtSearch = UITextField()
     let btnSearch = UIButton()
+    let lblIdView = UILabel()
     
     
     override func viewDidLoad() {
@@ -39,6 +40,17 @@ class SearchViewController: UIViewController, UITextFieldDelegate {
         btnSearch.setTitle("Search", for: .normal)
         btnSearch.setTitleColor(UIColor.black, for: .normal)
         btnSearch.layer.cornerRadius = 5
+        
+        self.view.addSubview(self.lblIdView)
+        lblIdView.backgroundColor = UIColor.white
+        lblIdView.snp.makeConstraints {
+            $0.top.equalToSuperview().offset(550)
+            $0.center.equalToSuperview()
+            $0.bottom.equalToSuperview().offset(-100)
+        }
+        lblIdView.layer.borderColor = UIColor.black.cgColor
+        lblIdView.layer.borderWidth = 0.3
+        lblIdView.text = " "
         
         
         
