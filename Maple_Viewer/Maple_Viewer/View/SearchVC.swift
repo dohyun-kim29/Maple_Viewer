@@ -9,7 +9,7 @@
 import UIKit
 import SnapKit
 
-class SearchVC: UIViewController, UITextFieldDelegate {
+class SearchVC: UIViewController {
     private lazy var searchView = SearchView(controlBy: self)
     
     override func viewDidLoad() {
@@ -20,5 +20,12 @@ class SearchVC: UIViewController, UITextFieldDelegate {
     }
     override func loadView() {
         self.view = searchView
+    }
+}
+
+extension SearchVC: UITextFieldDelegate {
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
     }
 }
