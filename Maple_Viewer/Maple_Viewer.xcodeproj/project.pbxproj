@@ -13,11 +13,12 @@
 		475B44FA24D2F5AB00E523A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 475B44F924D2F5AB00E523A2 /* Assets.xcassets */; };
 		475B44FD24D2F5AB00E523A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 475B44FB24D2F5AB00E523A2 /* LaunchScreen.storyboard */; };
 		475B450924D3FC7900E523A2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475B450824D3FC7900E523A2 /* Model.swift */; };
-		475B450B24D3FC9500E523A2 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475B450A24D3FC9500E523A2 /* SearchViewController.swift */; };
+		475B450B24D3FC9500E523A2 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475B450A24D3FC9500E523A2 /* SearchVC.swift */; };
 		475B450D24D3FCA400E523A2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475B450C24D3FCA400E523A2 /* DetailViewController.swift */; };
 		475B450F24D3FCD000E523A2 /* BringData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475B450E24D3FCD000E523A2 /* BringData.swift */; };
 		4762E2CF24D7BA030037BF6F /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4762E2CE24D7BA030037BF6F /* SearchViewModel.swift */; };
 		B658291B7235CE8A60722C13 /* Pods_Maple_Viewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6448F3AE813752BCA38D933B /* Pods_Maple_Viewer.framework */; };
+		D90E304224D7D8FF002FAC89 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90E304124D7D8FF002FAC89 /* SearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,13 +30,14 @@
 		475B44FC24D2F5AB00E523A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		475B44FE24D2F5AB00E523A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		475B450824D3FC7900E523A2 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		475B450A24D3FC9500E523A2 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		475B450A24D3FC9500E523A2 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		475B450C24D3FCA400E523A2 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		475B450E24D3FCD000E523A2 /* BringData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BringData.swift; sourceTree = "<group>"; };
 		4762E2CE24D7BA030037BF6F /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		6448F3AE813752BCA38D933B /* Pods_Maple_Viewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Maple_Viewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FEC3DCE254E50AE473A490C /* Pods-Maple_Viewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Maple_Viewer.debug.xcconfig"; path = "Target Support Files/Pods-Maple_Viewer/Pods-Maple_Viewer.debug.xcconfig"; sourceTree = "<group>"; };
 		C2AE8B2EAF5AAF60AF4FAA97 /* Pods-Maple_Viewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Maple_Viewer.release.xcconfig"; path = "Target Support Files/Pods-Maple_Viewer/Pods-Maple_Viewer.release.xcconfig"; sourceTree = "<group>"; };
+		D90E304124D7D8FF002FAC89 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +106,8 @@
 		475B450724D3FC6300E523A2 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				475B450A24D3FC9500E523A2 /* SearchViewController.swift */,
+				D90E304124D7D8FF002FAC89 /* SearchView.swift */,
+				475B450A24D3FC9500E523A2 /* SearchVC.swift */,
 				475B450C24D3FCA400E523A2 /* DetailViewController.swift */,
 			);
 			path = View;
@@ -242,10 +245,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				475B450B24D3FC9500E523A2 /* SearchViewController.swift in Sources */,
+				475B450B24D3FC9500E523A2 /* SearchVC.swift in Sources */,
 				4762E2CF24D7BA030037BF6F /* SearchViewModel.swift in Sources */,
 				475B450F24D3FCD000E523A2 /* BringData.swift in Sources */,
 				475B44F124D2F5A800E523A2 /* AppDelegate.swift in Sources */,
+				D90E304224D7D8FF002FAC89 /* SearchView.swift in Sources */,
 				475B450D24D3FCA400E523A2 /* DetailViewController.swift in Sources */,
 				475B44F324D2F5A800E523A2 /* SceneDelegate.swift in Sources */,
 				475B450924D3FC7900E523A2 /* Model.swift in Sources */,
