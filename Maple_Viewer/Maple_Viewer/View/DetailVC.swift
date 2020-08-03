@@ -9,7 +9,10 @@
 import UIKit
 
 
-class DetailViewController: UIViewController {
+class DetailVC: UIViewController {
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
     
 }
