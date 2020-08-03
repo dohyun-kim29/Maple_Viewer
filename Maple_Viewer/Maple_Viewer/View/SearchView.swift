@@ -8,9 +8,15 @@
 
 import SnapKit
 import UIKit
+import RxCocoa
+import RxSwift
+import RxOptional
 
-class SearchView: UIView {    
+
+class SearchView: UIView {
+
     weak var vc: SearchVC?
+    
     
     init(controlBy viewController: SearchVC) {
         self.vc = viewController
@@ -46,6 +52,8 @@ class SearchView: UIView {
     
 }
 
+
+
 extension SearchView {
     
     func setupUI() {
@@ -71,7 +79,7 @@ extension SearchView {
 }
 
 extension SearchView: UITextFieldDelegate {
-   
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         txtSearch.resignFirstResponder()
         return true

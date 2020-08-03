@@ -9,10 +9,14 @@
 import Foundation
 
 struct CharacterInfo {
+    
     var imgUrl: String
     var world: String
     var nickName: String
     var level: String
     var detailJob: String
 }
+
+
+
 
