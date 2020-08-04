@@ -35,6 +35,9 @@ class SearchVC: UIViewController {
             .bind(to: viewModel.charId)
             .disposed(by: disposeBag)
         
+        searchView.btnSearch.rx.tap
+            .map { self.viewModel.presentingView() }
+        
     }
 }
 
