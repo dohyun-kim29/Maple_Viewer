@@ -10,6 +10,16 @@ import Foundation
 import RxSwift
 import RxCocoa
 
+func presentingView() {
+    
+    let rootViewController = SearchVC()
+    let DetailViewController = DetailVC()
+    
+    rootViewController.present(DetailViewController, animated: true, completion: nil)
+    
+    
+}
+
 
 class SearchViewModel {
     
