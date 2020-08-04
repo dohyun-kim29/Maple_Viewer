@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+enum Scene {
+    case search(SearchViewModel)
+    case detail(DetailViewModel)
+}
+
+extension Scene {
+    
+    
+}
