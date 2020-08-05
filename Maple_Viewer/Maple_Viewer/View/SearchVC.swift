@@ -35,10 +35,16 @@ class SearchVC: UIViewController {
             .bind(to: viewModel.charId)
             .disposed(by: disposeBag)
         
+        searchView.bringSubviewToFront(searchView.btnSearch)
+        
         searchView.btnSearch.rx.tap
-            .map { self.viewModel.presentingView() }
+            .map { self.viewModel.btnTest() }
+            .bind{ [ weak self] in
+                self?.viewModel.presentingView() }
+        .disposed(by: disposeBag)
         
     }
+    
 }
 
 extension SearchVC: UITextFieldDelegate {

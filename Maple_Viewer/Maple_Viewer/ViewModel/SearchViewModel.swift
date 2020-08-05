@@ -17,6 +17,8 @@ class SearchViewModel {
     
     let charId = BehaviorRelay<String>(value: "")
     
+    
+    
     func presentingView() {
         
         let rootViewController = SearchVC()
@@ -27,4 +29,7 @@ class SearchViewModel {
         
     }
     
+    func btnTest() {
+        print("clicked")
+    }
 }

@@ -38,7 +38,7 @@ class SearchView: UIView {
     
     let btnSearch: UIButton = {
         let btn = UIButton()
-        btn.backgroundColor = .white
+        btn.backgroundColor = UIColor.cyan
         btn.setTitle("Search", for: .normal)
         btn.setTitleColor(UIColor.black, for: .normal)
         btn.layer.cornerRadius = 5
@@ -69,11 +69,14 @@ extension SearchView {
         txtSearch.snp.makeConstraints {
             $0.centerX.equalTo(btnSearch)
             $0.bottom.equalTo(btnSearch.snp.top).offset(-100)
+            
         }
         
         btnSearch.snp.makeConstraints {
             $0.center.equalToSuperview()
         }
+        btnSearch.layer.zPosition = 999
+        
     }
 }
 
