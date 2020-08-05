@@ -10,6 +10,7 @@ pod 'RxSwift'
 pod 'RxCocoa'
 pod 'RxOptional'
 pod 'SnapKit'
+pod 'Kingfisher'
 
   # Pods for Maple_Viewer
 
