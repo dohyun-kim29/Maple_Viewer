@@ -24,7 +24,9 @@ class SearchViewModel {
         let rootViewController = SearchVC()
         let DetailViewController = DetailVC()
         
-        rootViewController.present(DetailViewController, animated: true, completion: nil)
+//        rootViewController.present(DetailViewController, animated: true, completion: nil)
+        
+        UIApplication.shared.keyWindow?.rootViewController?.present(DetailViewController, animated: true, completion: nil)
         
         
     }

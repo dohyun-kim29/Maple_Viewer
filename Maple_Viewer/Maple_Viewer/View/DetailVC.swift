@@ -15,8 +15,10 @@ class DetailVC: UIViewController {
     
     private lazy var detailView = DetailView(controlBy: self)
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+    
     }
     
 }

@@ -25,6 +25,10 @@ class SearchVC: UIViewController {
         self.view.backgroundColor = .white
         bind()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        present()
+    }
     override func loadView() {
         self.view = searchView
     }
@@ -37,12 +41,17 @@ class SearchVC: UIViewController {
         
         searchView.bringSubviewToFront(searchView.btnSearch)
         
-        searchView.btnSearch.rx.tap
-            .map { self.viewModel.btnTest() }
-            .bind{ [ weak self] in
-                self?.viewModel.presentingView() }
-        .disposed(by: disposeBag)
+       
         
+    }
+    
+    func present() {
+        
+        searchView.btnSearch.rx.tap
+                   .map { self.viewModel.btnTest() }
+                   .bind{ [ weak self] in
+                       self?.viewModel.presentingView() }
+               .disposed(by: disposeBag)
     }
     
 }
