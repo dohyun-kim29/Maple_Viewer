@@ -18,10 +18,16 @@ class DetailVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        detailView.setupUI()
+
         
         self.view.backgroundColor = UIColor.white
         
         
+    }
+    
+    override func loadView() {
+        self.view = detailView
     }
     
 }

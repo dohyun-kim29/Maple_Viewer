@@ -20,7 +20,7 @@ class DetailView: UIView {
     weak var vc: DetailVC?
     
     var viewModel = DetailViewModel()
-   
+    
     
     init(controlBy viewcontroller: DetailVC) {
         self.vc = viewcontroller
@@ -78,6 +78,9 @@ extension DetailView {
     
     func setupConstraints() {
         
-        
     }
+    
+    
+    
 }
+
