@@ -7,17 +7,19 @@
 //
 
 import Foundation
+import RxSwift
+
 
 var SearchVM = SearchViewModel()
 
 struct CharacterInfo {
     
     var charId = SearchVM.charId
-    var imgUrl: String
-    var world: String
-    var nickName: String
-    var level: String
-    var detailJob: String
+    var imgUrl = BehaviorSubject<String>(value: "")
+    var world = BehaviorSubject<String>(value: "월드")
+    var nickName = BehaviorSubject<String>(value: "닉네임")
+    var level = BehaviorSubject<String>(value: "레벨")
+    var detailJob = BehaviorSubject<String>(value: "직업")
 }
 
 
