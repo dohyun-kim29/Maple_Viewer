@@ -78,6 +78,13 @@ extension DetailView {
     
     func setupConstraints() {
         
+        charImg.snp.makeConstraints {
+            $0.bottom.equalTo(0)
+            $0.top.equalTo(0)
+            $0.leading.equalTo(0)
+            $0.trailing.equalTo(0)
+        }
+        
     }
     
     

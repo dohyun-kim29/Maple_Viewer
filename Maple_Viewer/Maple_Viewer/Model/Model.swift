@@ -20,6 +20,8 @@ struct CharacterInfo {
     var nickName = BehaviorSubject<String>(value: "닉네임")
     var level = BehaviorSubject<String>(value: "레벨")
     var detailJob = BehaviorSubject<String>(value: "직업")
+    
+    
 }
 
 
