@@ -1,0 +1,14 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Maple_Viewer_Test' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Maple_Viewer_Test
+
+pod 'RxSwift'
+pod 'RxCocoa'
+pod 'SnapKit'
+
+end
