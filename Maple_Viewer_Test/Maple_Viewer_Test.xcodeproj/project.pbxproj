@@ -11,6 +11,7 @@
 		4720F82424DD68140094BD4A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4720F82324DD68140094BD4A /* SceneDelegate.swift */; };
 		4720F82624DD68140094BD4A /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4720F82524DD68140094BD4A /* SearchVC.swift */; };
 		4720F82B24DD68160094BD4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4720F82A24DD68160094BD4A /* Assets.xcassets */; };
+		4720F83724DEC4C10094BD4A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4720F83624DEC4C10094BD4A /* Model.swift */; };
 		701048F491BE75FB82CC084F /* Pods_Maple_Viewer_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36072B020F2B14B2B0D114A5 /* Pods_Maple_Viewer_Test.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,6 +23,7 @@
 		4720F82524DD68140094BD4A /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		4720F82A24DD68160094BD4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4720F82F24DD68160094BD4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4720F83624DEC4C10094BD4A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		67AF572674D65E4AAF3554E8 /* Pods-Maple_Viewer_Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Maple_Viewer_Test.debug.xcconfig"; path = "Target Support Files/Pods-Maple_Viewer_Test/Pods-Maple_Viewer_Test.debug.xcconfig"; sourceTree = "<group>"; };
 		77F1DBB8BB7457085F6F7AD1 /* Pods-Maple_Viewer_Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Maple_Viewer_Test.release.xcconfig"; path = "Target Support Files/Pods-Maple_Viewer_Test/Pods-Maple_Viewer_Test.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,6 +69,7 @@
 		4720F82024DD68140094BD4A /* Maple_Viewer_Test */ = {
 			isa = PBXGroup;
 			children = (
+				4720F83524DEC4A80094BD4A /* Model */,
 				4720F82124DD68140094BD4A /* AppDelegate.swift */,
 				4720F82324DD68140094BD4A /* SceneDelegate.swift */,
 				4720F82524DD68140094BD4A /* SearchVC.swift */,
@@ -74,6 +77,14 @@
 				4720F82F24DD68160094BD4A /* Info.plist */,
 			);
 			path = Maple_Viewer_Test;
+			sourceTree = "<group>";
+		};
+		4720F83524DEC4A80094BD4A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4720F83624DEC4C10094BD4A /* Model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		A746D9BB70F0AE45BAC012C3 /* Pods */ = {
@@ -201,6 +212,7 @@
 				4720F82624DD68140094BD4A /* SearchVC.swift in Sources */,
 				4720F82224DD68140094BD4A /* AppDelegate.swift in Sources */,
 				4720F82424DD68140094BD4A /* SceneDelegate.swift in Sources */,
+				4720F83724DEC4C10094BD4A /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
