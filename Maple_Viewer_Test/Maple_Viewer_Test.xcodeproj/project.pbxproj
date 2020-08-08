@@ -14,6 +14,9 @@
 		4720F83724DEC4C10094BD4A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4720F83624DEC4C10094BD4A /* Model.swift */; };
 		4720F83B24DEC4EE0094BD4A /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4720F83A24DEC4EE0094BD4A /* SearchViewModel.swift */; };
 		4720F83D24DEC4FE0094BD4A /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4720F83C24DEC4FE0094BD4A /* DetailViewModel.swift */; };
+		4720F84224DEC53A0094BD4A /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4720F84124DEC53A0094BD4A /* SearchView.swift */; };
+		4720F84424DEC5440094BD4A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4720F84324DEC5440094BD4A /* DetailView.swift */; };
+		4720F84624DEC55B0094BD4A /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4720F84524DEC55B0094BD4A /* DetailVC.swift */; };
 		701048F491BE75FB82CC084F /* Pods_Maple_Viewer_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36072B020F2B14B2B0D114A5 /* Pods_Maple_Viewer_Test.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +31,9 @@
 		4720F83624DEC4C10094BD4A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		4720F83A24DEC4EE0094BD4A /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		4720F83C24DEC4FE0094BD4A /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		4720F84124DEC53A0094BD4A /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		4720F84324DEC5440094BD4A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		4720F84524DEC55B0094BD4A /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		67AF572674D65E4AAF3554E8 /* Pods-Maple_Viewer_Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Maple_Viewer_Test.debug.xcconfig"; path = "Target Support Files/Pods-Maple_Viewer_Test/Pods-Maple_Viewer_Test.debug.xcconfig"; sourceTree = "<group>"; };
 		77F1DBB8BB7457085F6F7AD1 /* Pods-Maple_Viewer_Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Maple_Viewer_Test.release.xcconfig"; path = "Target Support Files/Pods-Maple_Viewer_Test/Pods-Maple_Viewer_Test.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,11 +79,11 @@
 		4720F82024DD68140094BD4A /* Maple_Viewer_Test */ = {
 			isa = PBXGroup;
 			children = (
+				4720F84024DEC52E0094BD4A /* View */,
 				4720F83924DEC4DB0094BD4A /* ViewModel */,
 				4720F83524DEC4A80094BD4A /* Model */,
 				4720F82124DD68140094BD4A /* AppDelegate.swift */,
 				4720F82324DD68140094BD4A /* SceneDelegate.swift */,
-				4720F82524DD68140094BD4A /* SearchVC.swift */,
 				4720F82A24DD68160094BD4A /* Assets.xcassets */,
 				4720F82F24DD68160094BD4A /* Info.plist */,
 			);
@@ -99,6 +105,17 @@
 				4720F83C24DEC4FE0094BD4A /* DetailViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4720F84024DEC52E0094BD4A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4720F82524DD68140094BD4A /* SearchVC.swift */,
+				4720F84524DEC55B0094BD4A /* DetailVC.swift */,
+				4720F84124DEC53A0094BD4A /* SearchView.swift */,
+				4720F84324DEC5440094BD4A /* DetailView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		A746D9BB70F0AE45BAC012C3 /* Pods */ = {
@@ -224,8 +241,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4720F82624DD68140094BD4A /* SearchVC.swift in Sources */,
+				4720F84424DEC5440094BD4A /* DetailView.swift in Sources */,
 				4720F83D24DEC4FE0094BD4A /* DetailViewModel.swift in Sources */,
 				4720F83B24DEC4EE0094BD4A /* SearchViewModel.swift in Sources */,
+				4720F84224DEC53A0094BD4A /* SearchView.swift in Sources */,
+				4720F84624DEC55B0094BD4A /* DetailVC.swift in Sources */,
 				4720F82224DD68140094BD4A /* AppDelegate.swift in Sources */,
 				4720F82424DD68140094BD4A /* SceneDelegate.swift in Sources */,
 				4720F83724DEC4C10094BD4A /* Model.swift in Sources */,
