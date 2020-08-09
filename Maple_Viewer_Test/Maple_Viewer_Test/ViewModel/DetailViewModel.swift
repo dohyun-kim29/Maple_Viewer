@@ -7,3 +7,17 @@
 //
 
 import Foundation
+import RxSwift
+
+class DetailViewModel {
+    
+    let model = CharacterInfo()
+    
+    let url = URL(string: "http://api.maplestory.nexon.com/soap/maplestory.asmx/soap/maplestory.asmx")
+
+    func request() {
+        
+    }
+
+    
+}
